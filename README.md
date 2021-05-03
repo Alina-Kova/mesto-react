@@ -15,11 +15,11 @@
 
  ##Сборка проекта осуществляется по команде:
 
- npm run build
+    npm run build
 
   ##Запуск проекта осуществляется по команде:
 
- npm run start
+    npm run start
 
 ##Cсылка на проект на GitHubPages:
 
