@@ -7,28 +7,35 @@ import { ImagePopup } from './ImagePopup.js';
 
 
 function App() {
+  //переменные состояния, отвечающие за видимость попапов изменения данных пользователя, доб-я карточки и изменения аватара
   const [isEditProfilePopupOpen, setIsEditProfilePopupOpen] = React.useState(false);
   const [isAddPlacePopupOpen, setIsAddPlacePopupOpen] = React.useState(false);
   const [isEditAvatarPopupOpen, setIsEditAvatarPopupOpen] = React.useState(false);
+  //переменные состояния, отвечающая за видимость попапа с картинкой
   const [selectedCard, setSelectedCard] = React.useState(false);
 
 
+  //обработчик формы изменения аватара
   function handleEditAvatarClick() {
     setIsEditAvatarPopupOpen(true)
   };
 
+  //обработчик формы с информацией о пользователе
   function handleEditProfileClick() {
     setIsEditProfilePopupOpen(true)
   };
 
+  //обработчик формы добавления карточки
   function handleAddPlaceClick() {
     setIsAddPlacePopupOpen(true)
   };
 
+  //обработчик попапа с полноразмерной картинкой
   function handleCardClick(card) {
     setSelectedCard(card)
   };
 
+  //обработчик закрытия всех попапов
   function closeAllPopups() {
     setIsEditAvatarPopupOpen(false);
     setIsEditProfilePopupOpen(false);

@@ -1,5 +1,6 @@
 export function Card (props) {
 
+    //обработчик клика по картинке в карточке
     function handleClick() {
       props.onCardClick(props.card);
       } 

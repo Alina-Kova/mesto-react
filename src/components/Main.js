@@ -3,11 +3,14 @@ import { api } from '../utils/api.js';
 import { Card } from './Card.js';
 
 export function Main(props) {
+  //переменные состояния данных пользователя и аватара, подтягивают данные через API
   const [userName, setUserName] = React.useState('');
   const [userDescription, setUserDescription] = React.useState('');
   const [userAvatar, setUserAvatar] = React.useState('');
+  //переменная с пустым массивом карточек, подтягивает данные о карточках через API
   const [cards, setCards] = React.useState([]);
 
+  //создаем и передаем массив с данными пользователя и карточками методу Promise.all
   React.useEffect(() => {
     Promise.all([api.getPersonalInfo(), api.getInitialCards()])
       .then(([data, cardData]) => {

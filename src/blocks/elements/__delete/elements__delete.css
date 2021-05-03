@@ -1,7 +1,7 @@
 .elements__delete {
     visibility: hidden;
     position: absolute;
-    background-image: url(../../../Images/trash.svg);
+    background-image: url(../../../images/trash.svg);
     background-repeat: no-repeat;
     background-position: inherit;
     background-color: transparent;
