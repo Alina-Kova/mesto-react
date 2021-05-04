@@ -53,7 +53,6 @@ function App() {
         <Footer />
 
         <PopupWithForm isOpen={isEditProfilePopupOpen} onClose={closeAllPopups} title="Редактировать профиль" buttonText="Сохранить" name="edit-profile">
-          <div className="popup__input" name="popupform">
             <input type="text" name="fullname" placeholder="Имя" className="popup__text popup__text_type_name"
               id="name-input" required minLength="2" maxLength="40" />
             <span className="popup__error" id="name-input-error"></span>
@@ -61,11 +60,9 @@ function App() {
               className="popup__text popup__text_type_occupation" id="occupation-input" required minLength="2"
               maxLength="400" />
             <span className="popup__error" id="occupation-input-error"></span>
-          </div>
         </PopupWithForm>
 
         <PopupWithForm isOpen={isAddPlacePopupOpen} onClose={closeAllPopups} title="Новое место" buttonText="Создать" name="add-card">
-          <div className="popup__input popup__input_function_add" name="popupform">
             <input type="text" name="placename" placeholder="Название"
               className="popup__text popup__text_type_place" id="place-input" required minLength="2"
               maxLength="30" />
@@ -73,7 +70,6 @@ function App() {
             <input type="url" name="url" placeholder="Ссылка на картинку"
               className="popup__text popup__text_type_link" id="link-input" required />
             <span className="popup__error" id="link-input-error"></span>
-          </div>
         </PopupWithForm>
 
         <PopupWithForm isOpen={isEditAvatarPopupOpen} onClose={closeAllPopups} title="Обновить аватар" buttonText="Сохранить" name="change-avatar" >

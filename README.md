@@ -23,4 +23,4 @@
 
 ### Cсылка на проект на GitHubPages:
 
-https://alina-kova.github.io/mesto-react
+https://alina-kova.github.io/mesto-react/

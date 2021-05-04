@@ -1,6 +1,6 @@
 export function PopupWithForm(props) {
   return (
-    <section className={props.isOpen ? `popup popup_type_${props.name} popup_opened` : `popup popup_type_${props.name}`}>
+    <section className={`popup popup_type_${props.name} ${props.isOpen ? 'popup_opened' : ''}`}>
       <button className="popup__close-button" type="button" onClick={props.onClose}></button>
       <div className="popup__container">
         <form className="popup__input" name={props.name} noValidate>
