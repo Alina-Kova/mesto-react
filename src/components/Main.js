@@ -26,7 +26,7 @@ export function Main(props) {
       <section className="elements">
         <ul className="elements__list">
           {props.cards.map(card => {
-            return (<Card 
+            return (<Card
               card={card}
               onCardClick={props.onCardClick}
               onCardLike={props.onCardLike}
